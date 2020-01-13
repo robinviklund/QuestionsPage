@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>Questions</title>
+    </head>
+    <body>
+        <div id="topbar">
+            <p id="points">0p</p>
+            <h1>QuestionsPage</h1>
+            <p id="count">1/10</p>
+        </div>
+        <div class="center">
+            <div id="mark">
+                <h2>Välj räknesätt</h2>
+                <div class="selections">
+                    <div class="selection" id="+" onclick="chooseMark(this.id)">
+                        +
+                    </div>
+                    <div class="selection" id="-" onclick="chooseMark(this.id)">
+                        -
+                    </div>
+                    <div class="selection" id="*" onclick="chooseMark(this.id)">
+                        *
+                    </div>
+                    <div class="selection" id="/" onclick="chooseMark(this.id)">
+                        /
+                    </div>
+                </div>
+            </div>
+            <div id="questions">
+                <h2 id="question"></h2>
+                <div class="selections" id="answers">
+                    <div class="selection" onclick="answered(this.id)"></div>
+                    <div class="selection" onclick="answered(this.id)"></div>
+                    <div class="selection" onclick="answered(this.id)"></div>
+                    <div class="selection" onclick="answered(this.id)"></div>
+                </div>
+            </div>
+            <div id="finish">
+                <h2>Resultat:</h2>
+                <p id="result">10/10</p>
+                <h3 id="comment">Bra!</h3>
+                <div id="button" onclick="restart()">STARTA OM</div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
