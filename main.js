@@ -1,6 +1,4 @@
 let sign;
-let amount1;
-let amount2;
 let answer;
 let times = 1;
 let totalTimes = 10;
@@ -65,8 +63,8 @@ function makeAnswers(rightAnswer) {
 }
 
 function makeQuestion() {
-    amount1 = randomNum(11);
-    amount2 = randomNum(11);
+    let amount1 = randomNum(11);
+    let amount2 = randomNum(11);
     if (amount1 < amount2) {
         let amount = amount1;
         amount1 = amount2;
